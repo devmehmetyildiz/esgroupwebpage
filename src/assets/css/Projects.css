@@ -1,0 +1,100 @@
+.app__projects-container {
+    background-color: black;
+}
+
+.app__projects-portofilo {
+    display: flex;
+    flex-direction: column;
+    padding: 7% 18%;
+}
+
+.app__projects-titlesection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.app__projects-titleside {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.app__projects-button {
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: unset;
+    text-transform: capitalize;
+    padding: 13px 32px;
+    transition: 0.5s;
+    border: 2px solid #ff4800;
+    background-color: #ff4800;
+}
+
+.app__projects-buttonside :hover {
+    background-color: #fe6021 !important;
+    border: 2px solid #fe6021 !important;
+}
+
+.app__projects-boxitem-imgcontainer-bglg {
+    background-color: #fe6021;
+    transition: 0.5s;
+}
+.app__projects-boxitem-imgcontainer-bgdark {
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.app__projects-boxitem-imgcontainer {
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.app__projects-boxitem-titlesection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.app__projects-slider {
+    display: flex;
+}
+
+.app__projects-boxitem-title {
+    font-size: 20px;
+    color: white;
+}
+
+.app__projects-boxitem-subtitle {
+    font: 14px;
+    color: white;
+}
+
+.app__projects-slider-container .slick-slide {
+    width: 440px !important;
+    height: 440px !important;
+}
+
+.app__projects-slider-container .slick-track {
+    display: flex;
+}
+
+.slick-dots li {
+    height: 10px;
+    width: 10px;
+    background-color: #111;
+}
+
+li.slick-active {
+    background-color: #fe6021 !important;
+    color: #fe6021 !important;
+}

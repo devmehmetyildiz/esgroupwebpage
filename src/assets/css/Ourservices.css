@@ -1,0 +1,128 @@
+.app__ourservices-container {
+    background-color: black;
+}
+
+.app__ourservices-portofilo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3% 18%;
+}
+
+.app__ourservices-titlesection {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.app__ourservices-subtitle {
+    color: #ff4800;
+    font-size: 15px;
+}
+
+.app__ourservices-title {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Poppins";
+    margin-bottom: 15px;
+}
+
+.app__ourservices-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 4%;
+}
+
+.app__ourservices-line1 {
+    border-bottom: 3px solid #ff4800;
+    width: 30px;
+}
+
+.app__ourservices-line2 {
+    border-bottom: 3px solid #ff4800;
+    width: 10px;
+    margin: 0px 2px;
+}
+.app__ourservices-line3 {
+    border-bottom: 3px solid #ff4800;
+    width: 13px;
+    margin: 0px 1px;
+}
+
+.app__ourservices-brands {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.app__ourservices-bgblack {
+    background-color: black;
+}
+
+.app__ourservices-bgwhite {
+    background-color: white;
+}
+
+.app__ourservices-bggray {
+    background-color: #111;
+}
+
+.app__ourservices-bgorange {
+    background-color: #ff4800;
+}
+
+.app__ourservices-boxitem-container {
+    width: 350px;
+    height: 100px;
+    border-radius: 50px 0px 0px 50px;
+    margin: 10px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.app__ourservices-boxitem-portofilo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.app__ourservices-boxitem-iconcontainer {
+    margin-right: 30px;
+}
+
+.app__ourservices-boxitem-iconfa {
+    height: 34px;
+    width: 35px;
+}
+
+.app__ourservices-boxitem-container {
+    color: white;
+    font-size: 20px;
+}
+
+.app__ourservices-boxitem-iconcontainer {
+    padding: 20px;
+    border-radius: 40px;
+}
+
+.app__ourservices-boxitem-title {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.app__ourservices-boxitem-icon1 {
+    margin-left: 30px;
+}

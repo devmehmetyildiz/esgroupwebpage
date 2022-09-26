@@ -1,0 +1,100 @@
+.app__testimonals-container {
+    background-color: black;
+}
+
+.app__testimonals-portofilo {
+    display: flex;
+    flex-direction: column;
+    padding: 7% 18%;
+    justify-content: center;
+    align-items: center;
+}
+
+.app__testimonals-upperside {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.app__testimonals-brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 30px;
+}
+
+.app__testimonals-img {
+    background-color: wheat;
+    position: relative;
+}
+
+.app__testimonials-slidercontainer {
+    max-width: 500px;
+}
+
+.app__testimonials-boxitem-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 1rem;
+}
+
+.app__testimonials-boxitem-text {
+    font-family: "Courier New", Courier, monospace;
+    color: white;
+}
+
+.app__testimonials-boxitem-writer {
+    color: #ff4800;
+    margin-top: 2rem;
+}
+
+.app__testimonials-boxitem-iconfa {
+    height: 30px;
+    width: 30px;
+    margin-bottom: 2rem;
+}
+
+.app__testimonials-slidercontainer {
+    margin-top: 30px;
+}
+
+.app__testimonials-boxitem-title {
+    color: white;
+}
+
+.app__testimonials-circlefa {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    animation: moveleftbounce1 7s linear infinite;
+}
+
+@keyframes moveleftbounce1 {
+    0% {
+        left: 100px;
+    }
+    50% {
+        left: 245px;
+    }
+    100% {
+        left: 100px;
+    }
+}
+
+.app__testimonials-button {
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    bottom: 60px;
+    right: 60px;
+    background-color: #ff4800;
+    border-color: #ff4800;
+    z-index: 3;
+}
+

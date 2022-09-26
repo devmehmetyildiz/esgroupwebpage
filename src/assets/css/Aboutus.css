@@ -1,0 +1,147 @@
+.app__aboutus-container {
+    background-color: black;
+}
+
+.app__aboutus-portofilo {
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.app__aboutus-txtside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 50%;
+    padding-left: 11%;
+    padding-right: 2%;
+}
+
+.app__aboutus-subtitle {
+    color: #ff4800;
+    font-size: 15px;
+}
+
+.app__aboutus-boxline-1 {
+    border-bottom: 3px solid #ff4800;
+    width: 30px;
+}
+
+.app__aboutus-boxline-2 {
+    border-bottom: 3px solid #ff4800;
+    width: 10px;
+    margin: 0px 2px;
+}
+
+.app__aboutus-boxline-3 {
+    border-bottom: 3px solid #ff4800;
+    width: 13px;
+    margin: 0px 1px;
+}
+
+.app__aboutus-boxline {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 4%;
+}
+
+.app__aboutus-maintxticon {
+    margin-right: 20px;
+}
+
+.app__aboutus-boxtitleiconfa {
+    width: 30px;
+    height: 30px;
+}
+
+.app__aboutus-title {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Poppins";
+    margin-bottom: 15px;
+}
+
+.app__aboutus-maintxt {
+    display: flex;
+    flex-direction: row;
+}
+
+.app__aboutus-maintxtcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.app__aboutus-maintxt-title {
+    color: white;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.app__aboutus-maintxt-txt {
+    color: white;
+}
+
+.app__aboutus-maintxt-txt {
+    line-height: 24px;
+    font-family: "Poppins";
+    margin-bottom: 10px;
+}
+
+.app__aboutus-signaturefa {
+    height: 50px;
+    width: 50px;
+}
+
+.app__aboutus-imgside-img {
+    position: relative;
+}
+
+.app__aboutus-imgside-img2 {
+    position: absolute;
+    top: 150px;
+    left: -30px;
+}
+.app__aboutus-circlefa{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 30px;
+    left: 140px;
+    animation: moveleftbounce 7s linear infinite;
+}
+
+@keyframes moveleftbounce {
+    0%   {left: 140px; }
+    50%  { left: 345px; }
+    100% { left: 140px;}
+  }
+
+  .app__aboutus-getstartbutton{
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: unset;
+    text-transform: capitalize;
+    padding: 13px 32px;
+    transition: .5s;
+    position: absolute;
+    bottom: 30px;
+    right :180px;
+    border: 2px solid #ff4800;
+    background-color: #ff4800;
+}
+
+.app__aboutus-getstartbutton :hover{
+    background-color: #fe6021 !important;
+    border: 2px solid #fe6021 !important;
+    box-shadow: 1px 1px 1px 1px #fe6021 ;
+}

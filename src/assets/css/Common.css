@@ -1,0 +1,51 @@
+.app__common-titlesection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.app__common-titleside {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.app__common-subtitle {
+    color: #ff4800;
+    font-size: 15px;
+}
+
+.app__common-title {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Poppins";
+    margin-bottom: 15px;
+}
+
+.app__common-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 4%;
+}
+
+.app__common-line1 {
+    border-bottom: 3px solid #ff4800;
+    width: 30px;
+}
+
+.app__common-line2 {
+    border-bottom: 3px solid #ff4800;
+    width: 10px;
+    margin: 0px 2px;
+}
+
+.app__common-line3 {
+    border-bottom: 3px solid #ff4800;
+    width: 13px;
+    margin: 0px 1px;
+}

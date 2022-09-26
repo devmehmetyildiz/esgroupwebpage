@@ -1,0 +1,64 @@
+.app__home-container{
+    background-color: black;
+}
+
+.app__home-maincontainer{
+    padding:5px 20%;
+    height: 750px;    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.app__home-protofilo{
+    display: flex;
+    margin-top:9% ;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.app__home-title{
+    font-size: 45px;
+    font-weight: 700;
+    z-index: 1;
+    line-height: 90px;
+    padding: 8px 0;
+    margin: 0;
+    color: #fff;
+}
+
+.app__home-text{
+    width: fit-content;
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 1.9;
+    word-wrap: break-word;
+}
+
+.app__home-bgimg > img{
+    height: 700px;
+    
+}
+
+.app__home-btn >button {
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: unset;
+    text-transform: capitalize;
+    padding: 13px 32px;
+    transition: .5s;
+    z-index: 1;
+    border: 2px solid #ff4800;
+    background-color: #ff4800;
+}
+
+.app__home-btn :hover{
+    background-color: #fe6021 ;
+    border: 2px solid #fe6021 ;
+    box-shadow: 1px 1px 1px 1px #fe6021 ;
+}
+
+
