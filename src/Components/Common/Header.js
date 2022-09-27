@@ -9,7 +9,6 @@ export default function Header() {
 
     const [colorChange, setColorchange] = useState(false);
     const changeNavbarColor = () => {
-        console.log('window.scrollY : ', window.scrollY);
         if (window.scrollY >= 80) {
             setColorchange(true);
         }
@@ -19,7 +18,7 @@ export default function Header() {
     };
     window.addEventListener('scroll', changeNavbarColor);
 
-    const contentbg = colorChange ? "app__navbar_bgtransparent app__navbar" : "app__navbar_bgdark app__navbar"
+    const contentbg = colorChange ? "app__navbar_bgdark app__navbar" : "app__navbar_bgtransparent app__navbar"
 
     return (
         <nav className={contentbg}>
@@ -27,11 +26,12 @@ export default function Header() {
                 <img style={{ height: '50px', objectFit: 'contain', margin: '-15px' }} src={images.Logo} alt="app logo" />
             </div>
             <ul className='app__navbar-links'>
-                <li className='p__opensans'><a className='hover-underline-animation' href='#home'>Home</a></li>
-                <li className='p__opensans'><a className='hover-underline-animation' href='#home'>About</a></li>
-                <li className='p__opensans'><a className='hover-underline-animation' href='#home'>Menu</a></li>
-                <li className='p__opensans'><a className='hover-underline-animation' href='#home'>Awards</a></li>
-                <li className='p__opensans'><a className='hover-underline-animation' href='#home'>Contact</a></li>
+                <li className='p__opensans'><a className='hover-underline-animation' href='#home'>Anasayfa</a></li>
+                <li className='p__opensans'><a className='hover-underline-animation' href='#home'>Ürünlerimiz</a></li>
+                <li className='p__opensans'><a className='hover-underline-animation' href='#home'>Kurumsal</a></li>
+                <li className='p__opensans'><a className='hover-underline-animation' href='#home'>Katalog</a></li>
+                <li className='p__opensans'><a className='hover-underline-animation' href='#home'>Es Grup</a></li>
+                <li className='p__opensans'><a className='hover-underline-animation' href='#home'>İletişim</a></li>
             </ul>
             <div className='app__navbar-login'>
                 <a href='#login' className='p__opensans'>Teklif Al</a>
@@ -42,11 +42,12 @@ export default function Header() {
                     <div className='app__navbar-smallscreen_overlayer flex__center slide-bottom'>
                         <MdOutlineRestaurantMenu fontSize={28} className="overlayer__close" onClick={() => { setTogglemenu(false) }} />
                         <ul className='app__navbar-smallscreen_links'>
-                            <li className='p__opensans'><a href='#home'>Home</a></li>
-                            <li className='p__opensans'><a href='#home'>About</a></li>
-                            <li className='p__opensans'><a href='#home'>Menu</a></li>
-                            <li className='p__opensans'><a href='#home'>Awards</a></li>
-                            <li className='p__opensans'><a href='#home'>Contact</a></li>
+                            <li className='p__opensans'><a href='#home'>Anasayfa</a></li>
+                            <li className='p__opensans'><a href='#home'>Ürünlerimiz</a></li>
+                            <li className='p__opensans'><a href='#home'>Kurumsal</a></li>
+                            <li className='p__opensans'><a href='#home'>Katalog</a></li>
+                            <li className='p__opensans'><a href='#home'>Es Grup</a></li>
+                            <li className='p__opensans'><a href='#home'>İletişim</a></li>
                         </ul>
                     </div>
                 )}

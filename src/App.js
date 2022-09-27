@@ -9,17 +9,6 @@ function App() {
     <React.Fragment>
       <Header />
       <Home />
-      <Home />
-      <Home />
-      <Home />
-      <Home />
-      <Home />
-      <Home />
-      <Home />
-      <Home />
-      <Home />
-      <Home />
-      <Home />
       <Footer />
     </React.Fragment>
   );
