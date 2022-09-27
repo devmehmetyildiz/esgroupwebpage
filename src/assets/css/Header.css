@@ -1,11 +1,21 @@
+
 .app__navbar{
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--color-black);
     padding: 1rem 2rem;
    /*  height: 80px; */
+   position: fixed;
+    top: 0;
+}
+
+.app__navbar_bgdark{
+    background: var(--color-black);
+}
+
+.app__navbar_bgtransparent{
+    background: none;
 }
 
 .app_navbar-logo{
