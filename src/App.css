@@ -1,11 +1,14 @@
 /* App Components Classes  */
-
-body { 
-  background-color: gray;
+.Fullpage-wrapper {
+  height: 100vh;
+  width: 100%;
+  background-image: url("./assets/images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.section__padding {
-  padding: 4rem 6rem;
+.Section-wrapper {
+  padding: 4rem 8rem;
 }
 
 .flex__center {
@@ -14,37 +17,24 @@ body {
   align-items: center;
 }
 
-.app__bg {
-  /* background: url('./assets/bg.png'); */
-  background-position: center;
-  background-size: cover;
-  background-repeat: repeat;
-  background-attachment: fixed;
-}
-
-.app__wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  min-height: 100vh;
-}
-
 /* Text fonts and classes */
 
 .custom__button {
-    background-color: var(--color-crimson);
-    color: var(--color-black);
-    font-family: var(--font-base);
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    line-height: 28px;
-    font-size: 16px;
-    padding: 0.5rem 1.5rem;
-    border-radius: 1px;
-    border: none;
-    outline: none;
-    cursor: pointer;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: unset;
+  text-transform: capitalize;
+  padding: 13px 32px;
+  transition: 0.5s;
+  z-index: 1;
+  border: 2px solid #ff4800;
+  background-color: #ff4800;
+}
+.custom__button :hover {
+  background-color: #6d331c;
+  border: 2px solid #fe6021;
+  box-shadow: 1px 1px 1px 1px #fe6021;
 }
 
 .p__cormorant {
@@ -53,14 +43,23 @@ body {
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: capitalize;
-  font-feature-settings: 'tnum' on, 'lnum' on;
+  font-feature-settings: "tnum" on, "lnum" on;
   line-height: 29.9px;
   font-size: 23px;
 }
 
-.p__opensans {
+.p__opensans-text {
+  color: #848484;
+  line-height: 1.9;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+
+
+.p__opensans-dark {
   font-family: var(--font-alt);
-  color: var(--color-white);
+  color: var(--color-black);
   font-weight: 400;
   letter-spacing: 0.04em;
   text-transform: capitalize;
@@ -68,3 +67,27 @@ body {
   font-size: 15px;
   font-weight: bold;
 }
+
+.h1__title-dark {
+  color: black;
+  font-family: "Poppins";
+  font-size: 55px;
+  font-weight: 800;
+}
+
+.h1__subtitle-dark{
+  color: black;
+  font-family: "Poppins";
+  font-size: 26px;
+  font-weight: 500;
+}
+.h1__subtitle-dark-bold{
+  color: black;
+  font-family: "Poppins";
+  font-size: 26px;
+  font-weight: 800;
+}
+
+
+
+

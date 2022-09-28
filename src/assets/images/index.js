@@ -21,6 +21,13 @@ import team1 from "./team1.jpg"
 import team2 from "./team2.jpg"
 import team3 from "./team3.jpg"
 
+import itempp1 from "./itempp1.webp"
+import itempp2 from "./itempp2.webp"
+import itempp3 from "./itempp3.webp"
+import itempp4 from "./itempp4.webp"
+import itempp5 from "./itempp5.webp"
+
+import background from "./background.png"
 export default {
     Logo,
     aboutbg,
@@ -43,5 +50,12 @@ export default {
     services,
     team1,
     team2,
-    team3
+    team3,
+    itempp1,
+    itempp2,
+    itempp3,
+    itempp4,
+    itempp5,
+
+    background
 };

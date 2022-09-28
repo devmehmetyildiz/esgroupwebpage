@@ -1,0 +1,44 @@
+.app__about-container{
+    padding: 0 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.app__about-titleside{
+    padding: 2rem 20rem;
+    text-align: center;
+}
+
+.app__about-wrapper{
+    padding-top: 30px;
+}
+
+.app__about-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.app__about-item-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 20%;
+    padding: 0 3rem;
+    text-align: center;
+    margin: 0 3rem;
+    background-image: url("../images/aboutbg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.app__about-icon{
+    color: #ff4800;
+    font-size: 34px;
+}
+
