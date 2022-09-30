@@ -5,11 +5,11 @@ export default function Servicesitem({ icon, title }) {
     const [hovermode, sethovermode] = useState(false)
 
     return (
-        <div className={`transition min-w-24 ease-in-out flex flex-row justify-between p-3  m-4 items-center rounded-l-full ${ hovermode ? "bg-orange-600" : "bg-gray-100"}`}
+        <div className={`transition ease-in-out min-w-24  flex flex-row justify-between p-3  m-4 items-center rounded-l-full ${ hovermode ? "bg-orange-600" : "bg-gray-100"}`}
             onMouseEnter={() => { sethovermode(true) }}
             onMouseLeave={() => { sethovermode(false) }}
         >
-            <div className='mxl-1 rounded-full bg-white p-7'>
+            <div className='mxl-1 rounded-full bg-white p-5'>
                 {icon}
             </div>
             <div className={`text-lg font-bold ${hovermode ? 'text-white' : null}`}>

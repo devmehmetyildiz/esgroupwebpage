@@ -1,11 +1,12 @@
 import { BsFillCalendarCheckFill } from "react-icons/bs"
 import { GiSupersonicArrow, GiMegaphone, GiBulb } from "react-icons/gi"
-import { FaSearchDollar, FaRegLightbulb } from "react-icons/fa"
-import { TbPuzzle2 } from "react-icons/tb"
+import { FaSearchDollar, FaRegLightbulb,FaFacebook,FaTwitter,FaLinkedin,FaInstagram } from "react-icons/fa"
+import { TbPuzzle2,TbCircleDashed } from "react-icons/tb"
 import { GrEmptyCircle } from "react-icons/gr"
 import { BiMusic } from "react-icons/bi"
 import { SiBrave } from "react-icons/si"
 import { AiOutlineArrowRight } from "react-icons/ai"
+
 
 export default {
     BsFillCalendarCheckFill,
@@ -18,5 +19,10 @@ export default {
     GrEmptyCircle,
     BiMusic,
     SiBrave,
-    AiOutlineArrowRight
+    AiOutlineArrowRight,
+    TbCircleDashed,
+    FaFacebook,
+    FaTwitter,
+    FaLinkedin,
+    FaInstagram
 }

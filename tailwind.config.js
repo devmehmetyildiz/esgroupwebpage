@@ -2,7 +2,19 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
-  },
-  plugins: [],
+    extend: {
+      animation: {
+        'updownanimate': 'moveupdown 3s linear infinite',
+      },
+      keyframes: {
+        moveupdown: {
+          '0%': { bottom: '0px' },
+          '50%': { bottom: '40px' },
+          '100%': { bottom: '0px' }
+        }
+      }
+    },
+    plugins: [],
+  }
 }
+

@@ -11,7 +11,7 @@
 }
 
 .app__navbar_bgdark{
-    background: var(--color-black);
+    background: var(--color-white);
 }
 
 .app__navbar_bgtransparent{
