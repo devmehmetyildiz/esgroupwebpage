@@ -18,8 +18,8 @@ export default function Teams() {
   };
 
   return (
-    <div className='bg-[#f9f9f9] '>
-      <div className='p-20 cursor-pointer'>
+    <div className='bg-[#f9f9f9] p-4 mb-2'>
+      <div className='lg:p-20 cursor-pointer'>
         <Slider {...Slidersettings}>
           <Teamsitem imgsrc={images.team1} title="John Smith" work="Python Developer" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum  ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed tempor incididunt ut labore et dolore."  />
           <Teamsitem imgsrc={images.team2} title="John Smith" work="Python Developer" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum  ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed tempor incididunt ut labore et dolore."  />

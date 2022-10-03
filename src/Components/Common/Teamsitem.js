@@ -10,7 +10,7 @@ export default function Teamsitem({ imgsrc, title, work, text }) {
                     <Icons.TbCircleDashed />
                 </div>
             </div>
-            <div className='text-center font-semibold text-lg mt-2 w-1/2'>
+            <div className='text-center font-semibold text-lg mt-2 lg:w-1/2'>
                 <p>{text}</p>
             </div>
             <div className='text-[#ff4800] font-bold text-xl mt-4'>

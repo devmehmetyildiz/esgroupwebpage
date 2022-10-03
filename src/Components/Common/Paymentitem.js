@@ -1,7 +1,6 @@
 import React from 'react'
 
 export default function Paymentitem({ icon, iconbg, title, settings, iconcolor, payment, type, buttoncolor }) {
-    console.log('settings: ', settings);
 
     const iconbackground = {
         backgroundImage: `url(${iconbg})`,
