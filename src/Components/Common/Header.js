@@ -29,7 +29,7 @@ export default function Header() {
                 <li className='p__opensans-dark'><a className='hover-underline-animation' href='#home'>Anasayfa</a></li>
                 <li className='p__opensans-dark'><a className='hover-underline-animation' href='#home'>Ürünlerimiz</a></li>
                 <li className='p__opensans-dark'><a className='hover-underline-animation' href='#home'>Kurumsal</a></li>
-                <li className='p__opensans-dark'><a className='hover-underline-animation' href='#home'>Katalog</a></li>
+                <li className='p__opensans-dark'><a className='hover-underline-animation' href='/Corporate'>Katalog</a></li>
                 <li className='p__opensans-dark'><a className='hover-underline-animation' href='#home'>Es Grup</a></li>
                 <li className='p__opensans-dark'><a className='hover-underline-animation' href='#home'>İletişim</a></li>
             </ul>

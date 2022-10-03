@@ -27,6 +27,10 @@ import itempp3 from "./itempp3.webp"
 import itempp4 from "./itempp4.webp"
 import itempp5 from "./itempp5.webp"
 
+import eslonmutfak from "./eslonmutfak.webp"
+import eslonaliminyum from "./eslonaliminyum.webp"
+import eslonicdis from "./eslonicdis.webp"
+
 import background from "./background.png"
 export default {
     Logo,
@@ -56,6 +60,8 @@ export default {
     itempp3,
     itempp4,
     itempp5,
-
+    eslonmutfak,
+    eslonaliminyum,
+    eslonicdis,
     background
 };

@@ -1,5 +1,7 @@
 import React from 'react'
 import images from '../../../assets/images'
+import Slider from 'react-slick'
+import Mainslider from '../../Common/Mainslider';
 
 export default function main() {
   const panelbackground = {
@@ -8,20 +10,27 @@ export default function main() {
     backgroundSize: 'cover'
   }
 
+  const Slidersettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    customPaging: i => (
+      <div className="slick rounded-full border-[2px] border-orange-500 text-[#f9f9f9] p-[10px] hover:bg-orange-700">
+      </div>
+    )
+  };
+
   return (
-    <div className='pt-16 flex flex-col items-center justfiy-center lg:flex-row' style={panelbackground}>
-      <div className='w-2/3 flex justify-end items-end lg:w-1/2'>
-        <div className='flex flex-col items-center justify-center lg:w-2/3'>
-          <h1 className='font-extrabold text-3xl text-black-700 p-4 leading-normal lg:text-6xl'>We take care of the future</h1>
-          <p className='text-[#848484] leading-relaxed py-4 px-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus commodo viverraaccumsan lacus vel facilisis.</p>
-          <div className='pr-[70%] pt-8 pb-4'>
-            <button className='bg-orange-600 p-2 min-w-fit rounded-md hover:bg-orange-800 transition ease-in-out duration-500'>GetStarted</button>
-          </div>
-        </div>
-      </div>
-      <div className='p-4 w-2/3 lg:w-1/2 lg:p-0'>
-        <img src={images.mainimg} alt="" className='object-contain'/>
-      </div>
+    <div className='pt-16 ' style={panelbackground}>
+      <Slider {...Slidersettings}>
+        <Mainslider />
+        <Mainslider />
+        <Mainslider />
+        <Mainslider />
+      </Slider>
     </div>
+
   )
 }
