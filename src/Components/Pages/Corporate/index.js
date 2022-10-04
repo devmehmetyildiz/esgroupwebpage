@@ -1,5 +1,6 @@
 import React from 'react'
 import images from '../../../assets/images'
+import { motion } from "framer-motion"
 
 export default function index() {
 
@@ -31,17 +32,41 @@ export default function index() {
 
     return (
         <div className='pt-16 mb-12 flex flex-col justify-center items-center'>
-            <div className='py-12 flex flex-col justify-center items-center bg-black w-[100%]'>
+            <div
+                className='py-12 flex flex-col justify-center items-center bg-black w-[100%]'>
                 <h1 className='font-bold text-white text-5xl'>KURUMSAL</h1>
             </div>
             <div className='flex flex-col justify-center items-center py-4  w-2/3'>
-                <h1 className='text-4xl text-red-800 font-bold font-poppins'>HAKKIMIZDA</h1>
+                <motion.div
+                    initial={{ x: 400 }}
+                    //whileInView={{ x: 0 }}
+                    transition={{ duration: 0.5 }}
+                    animate={{ x: 0 }}
+                >
+                    <h1 className='text-4xl text-red-800 font-bold font-poppins'>HAKKIMIZDA</h1>
+                </motion.div>
                 <div className='border-2 bg-red-800 border-red-800 w-[100%] my-2' />
-                <p className='py-2 text-lg text-gray-600 font-bold'>{withoustext}</p>
-                <p className='py-2 text-lg text-gray-600 font-bold'>{withoustext1}</p>
-                <p className='py-2 text-lg text-gray-600 font-bold'>{withoustext2}</p>
-                <p className='py-2 text-lg text-gray-600 font-bold'>{withoustext3}</p>
-                <p className='py-2 text-lg text-gray-600 font-bold'>{withoustext4}</p>
+                <motion.div initial={{ x: 400 }} whileInView={{ x: 0 }} transition={{ duration: 0.5 }}    >
+                    <p className='py-2 text-lg text-gray-600 font-bold'>{withoustext}</p>
+                </motion.div>
+                <motion.div initial={{ x: 400 }} whileInView={{ x: 0 }} transition={{ duration: 0.7 }}    >
+                    <p className='py-2 text-lg text-gray-600 font-bold'>{withoustext1}</p>
+                </motion.div>
+                <motion.div initial={{ x: 400 }} whileInView={{ x: 0 }} transition={{ duration: 1 }}    >
+                    <p className='py-2 text-lg text-gray-600 font-bold'>{withoustext2}</p>
+                </motion.div>
+                <motion.div initial={{ x: 400 }} whileInView={{ x: 0 }} transition={{ duration: 1.2 }}    >
+                    <p className='py-2 text-lg text-gray-600 font-bold'>{withoustext3}</p>
+                </motion.div>
+                <motion.div initial={{ x: 400 }} whileInView={{ x: 0 }} transition={{ duration: 1.4 }}    >
+                    <p className='py-2 text-lg text-gray-600 font-bold'>{withoustext4}</p>
+                </motion.div>
+
+
+
+
+
+
             </div>
             <div className='flex flex-col justify-center items-center py-4  w-2/3'>
                 <h1 className='text-4xl text-red-800 font-bold font-poppins'>MİSYONUMUZ</h1>
