@@ -32,6 +32,15 @@ import eslonaliminyum from "./eslonaliminyum.webp"
 import eslonicdis from "./eslonicdis.webp"
 
 import background from "./background.png"
+
+import tanıtımfoto1 from "./tanıtımfoto1.jpeg"
+import tanıtımfoto2 from "./tanıtımfoto2.jpeg"
+import tanıtımfoto3 from "./tanıtımfoto3.jpeg"
+
+import türkcekatalog from "./türkcekatalog.webp"
+import ingilizcekatalog from "./ingilizcekatalog.webp"
+import arapcakatalog from "./arapcakatalog.webp"
+
 export default {
     Logo,
     aboutbg,
@@ -64,7 +73,12 @@ export default {
     eslonaliminyum,
     eslonicdis,
 
+    tanıtımfoto1,
+    tanıtımfoto2,
+    tanıtımfoto3,
+    türkcekatalog,
+    ingilizcekatalog,
+    arapcakatalog,
 
-    
     background
 };

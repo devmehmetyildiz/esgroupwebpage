@@ -8,10 +8,11 @@
     height: 60px;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 .app__navbar_bgdark{
-    background: var(--color-white);
+    background: linear-gradient(to left,#20002C,#cbb4d4);  
 }
 
 .app__navbar_bgtransparent{
@@ -47,7 +48,7 @@
 }
 
 .app__navbar-links li:hover{
-   color: #ff4800;
+   color: #EA9458;
 }
 
 .app__navbar-login{
@@ -139,7 +140,7 @@ font-family: var(--font-base);
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #ff4800;
+    background-color: #EA9458;
     transform-origin: bottom left;
     transition: transform 0.25s ease-out;
   }

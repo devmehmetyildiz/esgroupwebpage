@@ -61,12 +61,6 @@ export default function index() {
                 <motion.div initial={{ x: 400 }} whileInView={{ x: 0 }} transition={{ duration: 1.4 }}    >
                     <p className='py-2 text-lg text-gray-600 font-bold'>{withoustext4}</p>
                 </motion.div>
-
-
-
-
-
-
             </div>
             <div className='flex flex-col justify-center items-center py-4  w-2/3'>
                 <h1 className='text-4xl text-red-800 font-bold font-poppins'>MİSYONUMUZ</h1>

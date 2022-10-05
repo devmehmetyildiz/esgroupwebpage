@@ -15,14 +15,8 @@ export default function index() {
         <React.Fragment>
             <Main />
             <About />
-            <Services />
-            <Experience />
             <Teams />
-            <Payments />
-            <Projects />
-            <Ourclients />
-            <News />
-            <Newsletter />
+            <Services />
         </React.Fragment>
     )
 }

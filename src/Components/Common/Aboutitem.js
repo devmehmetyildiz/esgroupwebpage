@@ -15,7 +15,7 @@ export default function Aboutitem({ icon, title, text }) {
             <div className='py-2'>
                 {icon}
             </div>
-            <Title subtitle={title} isCentered={true} />
+            <Title subtitle={title} isCentered={true} isMiddle={true}/>
             <div className='py-4 w-1/2 text-center'>
                 <p className=''>{text}</p>
             </div>
