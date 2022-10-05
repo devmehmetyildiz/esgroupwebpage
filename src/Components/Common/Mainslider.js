@@ -3,7 +3,7 @@ import images from '../../assets/images'
 
 export default function Mainslider() {
     return (
-        <div className='flex flex-col items-center justfiy-center lg:flex-row'>
+        <div className='flex flex-col items-center justfiy-center lg:flex-row relative z-999'>
             <div className='w-2/3 flex justify-end items-end lg:w-1/2'>
                 <div className='flex flex-col items-center justify-center lg:w-2/3'>
                     <h1 className='font-extrabold text-3xl text-black-700 p-4 leading-normal lg:text-6xl'>We take care of the future</h1>

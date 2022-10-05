@@ -3,8 +3,9 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdOutlineRestaurantMenu } from 'react-icons/md';
 import images from "../../assets/images"
 import "../../assets/css/Header.css"
+import { withRouter } from 'react-router-dom';
 
-export default function Header() {
+export function Header({history}) {
     const [togglemenu, setTogglemenu] = useState(false);
 
     const [colorChange, setColorchange] = useState(false);
@@ -22,14 +23,15 @@ export default function Header() {
 
     return (
         <nav className={contentbg}>
-            <div className='app__navbar-logo'>
-                <img style={{ height: '50px', objectFit: 'contain', margin: '-15px' }} src={images.Logo} alt="app logo" />
+            <div className='app__navbar-logo cursor-pointer'>
+                <a onClick={()=>{history.push('/')}}>
+                    <img style={{ height: '50px', objectFit: 'contain', margin: '-15px' }} src={images.Logo} alt="app logo" />
+                </a>
             </div>
             <ul className='app__navbar-links'>
-                <li className='p__opensans-dark'><a className='hover-underline-animation' href='#home'>Anasayfa</a></li>
-                <li className='p__opensans-dark'><a className='hover-underline-animation' href='#home'>Ürünlerimiz</a></li>
+                <li className='p__opensans-dark'><a className='hover-underline-animation' onClick={()=>{history.push('/Products')}}>Ürünlerimiz</a></li>
                 <li className='p__opensans-dark'><a className='hover-underline-animation' href='#home'>Kurumsal</a></li>
-                <li className='p__opensans-dark'><a className='hover-underline-animation' href='/Corporate'>Katalog</a></li>
+                <li className='p__opensans-dark'><a className='hover-underline-animation' onClick={()=>{history.push('/Corporate')}}>Katalog</a></li>
                 <li className='p__opensans-dark'><a className='hover-underline-animation' href='#home'>Es Grup</a></li>
                 <li className='p__opensans-dark'><a className='hover-underline-animation' href='#home'>İletişim</a></li>
             </ul>
@@ -42,16 +44,17 @@ export default function Header() {
                     <div className='app__navbar-smallscreen_overlayer flex__center slide-bottom'>
                         <MdOutlineRestaurantMenu fontSize={28} className="overlayer__close" onClick={() => { setTogglemenu(false) }} />
                         <ul className='app__navbar-smallscreen_links'>
-                            <li className='p__opensans-dark'><a href='#home'>Anasayfa</a></li>
-                            <li className='p__opensans-dark'><a href='#home'>Ürünlerimiz</a></li>
-                            <li className='p__opensans-dark'><a href='#home'>Kurumsal</a></li>
-                            <li className='p__opensans-dark'><a href='#home'>Katalog</a></li>
-                            <li className='p__opensans-dark'><a href='#home'>Es Grup</a></li>
-                            <li className='p__opensans-dark'><a href='#home'>İletişim</a></li>
+                            <li className='p__opensans-dark'><a className='hover-underline-animation' href='/Products'>Ürünlerimiz</a></li>
+                            <li className='p__opensans-dark'><a className='hover-underline-animation' href='#home'>Kurumsal</a></li>
+                            <li className='p__opensans-dark'><a className='hover-underline-animation' href='/Corporate'>Katalog</a></li>
+                            <li className='p__opensans-dark'><a className='hover-underline-animation' href='#home'>Es Grup</a></li>
+                            <li className='p__opensans-dark'><a className='hover-underline-animation' href='#home'>İletişim</a></li>
                         </ul>
                     </div>
                 )}
             </div>
-        </nav>
+        </nav >
     )
 }
+
+export default withRouter(Header)

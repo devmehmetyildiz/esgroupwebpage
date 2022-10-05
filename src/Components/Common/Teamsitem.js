@@ -5,8 +5,8 @@ export default function Teamsitem({ imgsrc, title, work, text }) {
     return (
         <div className='flex flex-col justify-center items-center'>
             <div className='w-1/4 flex justify-center items-center relative'>
-                <img className='rounded-full z-0 ' src={imgsrc} alt="" />
-                <div className=' text-red-600 absolute animate-updownanimate right-20 bottom-0 z-10 text-[60px]'>
+                <img className='rounded-full z-110 ' src={imgsrc} alt="" />
+                <div className=' text-red-600 absolute animate-updownanimate right-20 bottom-0 z-1000 text-[60px]'>
                     <Icons.TbCircleDashed />
                 </div>
             </div>

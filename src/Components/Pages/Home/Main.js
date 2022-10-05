@@ -23,7 +23,7 @@ export default function main() {
   };
 
   return (
-    <div className='pt-16 ' style={panelbackground}>
+    <div className='pt-16' style={panelbackground}>
       <Slider {...Slidersettings}>
         <Mainslider />
         <Mainslider />
