@@ -1,8 +1,27 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import images from '../../../assets/images'
 import { motion } from "framer-motion"
 
-export default function index() {
+export default function Index() {
+
+
+    const frame_toleftslide = {
+        initial: { x: 400 },
+        viewport: { once: true },
+        whileInView: { x: 0 },
+        transition: { duration: 0.7 }
+    }
+
+    const frame_toRightslide = {
+        initial: { x: -400 },
+        viewport: { once: true },
+        whileInView: { x: 0 },
+        transition: { duration: 0.7 }
+    }
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     const withoustext = "Temelleri, 1971 tarihinde Kahramanmaraş’ın Küçük Sanayi Sitesi’nde yanmaz yapışmaz mutfak eşyalarının temel yapı taşı olarak nitelendirilebilecek olan alüminyum disk levha üretimi gerçekleştiren ESSAN METAL A.Ş.’ye dayanan ESLON MUTFAK EŞYALARI %100 yerli sermaye ile faaliyetlerine devam etmektedir"
     const withoustext1 = "35 yıllık tecrübenin ardından 2006 tarihinde kurumsal altyapısını geliştirmek ve üretim kapasitesini artırmak maksadı ile yeni yatırımlar yaparak Kahramanmaraş Organize Sanayi Sitesi’ndeki yeni adresine taşınan ESLON MUTFAK EŞYALARI günümüz itibari ile gerek imalat gerek ihracat konusunda şehrinin önde gelen aile şirketlerindendir."
@@ -31,10 +50,10 @@ export default function index() {
 
 
     return (
-        <div className='pt-16 mb-12 flex flex-col justify-center items-center'>
+        <div className='pt-24 mb-12 flex flex-col justify-center items-center'>
             <div
-                className='py-12 flex flex-col justify-center items-center bg-black w-[100%]'>
-                <h1 className='font-bold text-white text-5xl'>KURUMSAL</h1>
+                className='py-12 flex flex-col justify-center items-center mainbackground w-[100%]'>
+                <h1 className='font-bold text-[#F6E5C1] text-5xl'>KURUMSAL</h1>
             </div>
             <div className='flex flex-col justify-center items-center py-4  w-2/3'>
                 <motion.div
@@ -43,9 +62,9 @@ export default function index() {
                     transition={{ duration: 0.5 }}
                     animate={{ x: 0 }}
                 >
-                    <h1 className='text-4xl text-red-800 font-bold font-poppins'>HAKKIMIZDA</h1>
+                    <h1 className='text-4xl text-[#20002C] font-bold font-poppins'>HAKKIMIZDA</h1>
                 </motion.div>
-                <div className='border-2 bg-red-800 border-red-800 w-[100%] my-2' />
+                <div className='border-2 bg-[#20002C] border-[#20002C] w-[100%] my-2' />
                 <motion.div initial={{ x: 400 }} whileInView={{ x: 0 }} transition={{ duration: 0.5 }}    >
                     <p className='py-2 text-lg text-gray-600 font-bold'>{withoustext}</p>
                 </motion.div>
@@ -63,8 +82,8 @@ export default function index() {
                 </motion.div>
             </div>
             <div className='flex flex-col justify-center items-center py-4  w-2/3'>
-                <h1 className='text-4xl text-red-800 font-bold font-poppins'>MİSYONUMUZ</h1>
-                <div className='border-2 bg-red-800 border-red-800 w-[100%] my-2' />
+                <h1 className='text-4xl text-[#20002C] font-bold font-poppins'>MİSYONUMUZ</h1>
+                <div className='border-2 bg-[#20002C] border-[#20002C] w-[100%] my-2' />
                 <ul className='list-disc py-4 text-gray-600 font-bold text-lg'>
                     <li className='py-2'>Üretimde kalite düzeyini daima artırmak                    </li>
                     <li className='py-2'>Global gelişmeleri yakından takip etmek</li>
@@ -75,8 +94,8 @@ export default function index() {
                 </ul>
             </div>
             <div className='flex flex-col justify-center items-center py-4  w-2/3'>
-                <h1 className='text-4xl text-red-800 font-bold font-poppins'>VİZYONUMUZ</h1>
-                <div className='border-2 bg-red-800 border-red-800 w-[100%] my-2' />
+                <h1 className='text-4xl text-[#20002C] font-bold font-poppins'>VİZYONUMUZ</h1>
+                <div className='border-2 bg-[#20002C] border-[#20002C] w-[100%] my-2' />
                 <ul className='list-disc py-4 text-gray-600 font-bold text-lg'>
                     <li className='py-2'>Tüm dünya pazarlarında yer almak</li>
                     <li className='py-2'>Sektörümüze dair tüm organizasyonlara katılmak</li>
@@ -85,8 +104,8 @@ export default function index() {
                 </ul>
             </div>
             <div className='flex flex-col justify-center items-center py-4  w-2/3'>
-                <h1 className='text-4xl text-red-800 font-bold font-poppins'>ŞİRKETLERİMİZ</h1>
-                <div className='border-2 bg-red-800 border-red-800 w-[100%] my-2' />
+                <h1 className='text-4xl text-[#20002C] font-bold font-poppins'>ŞİRKETLERİMİZ</h1>
+                <div className='border-2 bg-[#20002C] border-[#20002C] w-[100%] my-2' />
                 <div className='flex flex-row justify-center items-center font-poppins'>
                     <div className='flex flex-col justify-center items-center py-2'>
                         <img className='w-64' src={images.eslonmutfak} alt="" />
@@ -103,8 +122,8 @@ export default function index() {
                 </div>
             </div>
             <div className='flex flex-col justify-center items-center py-4  w-2/3'>
-                <h1 className='text-4xl text-red-800 font-bold font-poppins'>KALİTE KONTROL</h1>
-                <div className='border-2 bg-red-800 border-red-800 w-[100%] my-2' />
+                <h1 className='text-4xl text-[#20002C] font-bold font-poppins'>KALİTE KONTROL</h1>
+                <div className='border-2 bg-[#20002C] border-[#20002C] w-[100%] my-2' />
                 <h2 className='text-xl text-gray-600 pb-4 pt-8 font-bold font-poppins'>{quality.title}</h2>
                 <p className='text-md text-gray-600 py-4 font-bold font-poppins'>{quality.text}</p>
                 <p className='text-md text-gray-600 py-4 font-bold font-poppins'>{quality.text1}</p>
@@ -116,23 +135,27 @@ export default function index() {
                 <p className='text-md text-gray-600 py-4 font-bold font-poppins'>{quality2.text1}</p>
             </div>
             <div className='flex flex-col justify-center items-center py-4  w-2/3'>
-                <h1 className='text-4xl text-red-800 font-bold font-poppins'>SOSYAL SORUMLULUK</h1>
-                <div className='border-2 bg-red-800 border-red-800 w-[100%] my-2' />
-                <p className='py-2 text-lg text-gray-600 font-bold'>{socialtxt1}</p>
-                <p className='py-2 text-lg text-gray-600 font-bold'>{socialtxt2}</p>
-                <div className='w-[100%] flex justify-start items-start'>
-                    <p className='py-2 text-lg text-gray-600 font-bold'>Bu kapsamda firmamız</p>
-                </div>
-                <ul className='list-disc py-4 text-gray-600 font-bold text-lg'>
-                    <li className='py-2'>Toplumun, hayırsever yardımlar konusunda beklenti içerisinde olduğunu hatırlayarak,</li>
-                    <li className='py-2'>Talep edilen gönüllü yardımları en iyi şekilde karşılayarak</li>
-                    <li className='py-2'>Yönetici ve çalışanları ile birlikte çevreye karşı duyarlı olarak</li>
-                    <li className='py-2'>Özel ve kamuya ait eğitim kurumlarına destek vererek</li>
-                    <li className='py-2'>Gönüllü projelere katılmaya gayret göstererek, faaliyetlerine yükümlülüklerinin bilincinde olarak</li>
-                </ul>
-                <div className='w-[100%] flex justify-start items-start'>
-                    <p className='py-2 text-lg text-gray-600 font-bold'>uzunca bir süredir gerçekleştirmekte olduğu faaliyetlerine süregelen tecrübeleri ile devam etmektedir.</p>
-                </div>
+                <motion.div {...frame_toleftslide}  >
+                    <h1 className='text-4xl text-[#20002C] font-bold font-poppins'>SOSYAL SORUMLULUK</h1>
+                </motion.div>
+                <div className='border-2 bg-[#20002C] border-[#20002C] w-[100%] my-2' />
+                <motion.div {...frame_toRightslide}>
+                    <p className='py-2 text-lg text-gray-600 font-bold'>{socialtxt1}</p>
+                    <p className='py-2 text-lg text-gray-600 font-bold'>{socialtxt2}</p>
+                    <div className='w-[100%] flex justify-start items-start'>
+                        <p className='py-2 text-lg text-gray-600 font-bold'>Bu kapsamda firmamız</p>
+                    </div>
+                    <ul className='list-disc py-4 text-gray-600 font-bold text-lg'>
+                        <li className='py-2'>Toplumun, hayırsever yardımlar konusunda beklenti içerisinde olduğunu hatırlayarak,</li>
+                        <li className='py-2'>Talep edilen gönüllü yardımları en iyi şekilde karşılayarak</li>
+                        <li className='py-2'>Yönetici ve çalışanları ile birlikte çevreye karşı duyarlı olarak</li>
+                        <li className='py-2'>Özel ve kamuya ait eğitim kurumlarına destek vererek</li>
+                        <li className='py-2'>Gönüllü projelere katılmaya gayret göstererek, faaliyetlerine yükümlülüklerinin bilincinde olarak</li>
+                    </ul>
+                    <div className='w-[100%] flex justify-start items-start'>
+                        <p className='py-2 text-lg text-gray-600 font-bold'>uzunca bir süredir gerçekleştirmekte olduğu faaliyetlerine süregelen tecrübeleri ile devam etmektedir.</p>
+                    </div>
+                </motion.div>
             </div>
         </div>
     )

@@ -41,6 +41,15 @@ import türkcekatalog from "./türkcekatalog.webp"
 import ingilizcekatalog from "./ingilizcekatalog.webp"
 import arapcakatalog from "./arapcakatalog.webp"
 
+import dekatalog1920 from "./19-20-dekatalog.webp"
+import elkatalog1920 from "./19-20-elkatalog.webp"
+import enkatalog1920 from "./19-20-enkatalog.webp"
+import frkatalog1920 from "./19-20-frkatalog.webp"
+import polkatalog1920 from "./19-20-polkatalog.webp"
+import pykatalog1920 from "./19-20-pykatalog.webp"
+import trkatalog1920 from "./19-20-trkatalog.webp"
+import arkatalog1920 from "./19-20arkatalog.webp"
+
 export default {
     Logo,
     aboutbg,
@@ -79,6 +88,15 @@ export default {
     türkcekatalog,
     ingilizcekatalog,
     arapcakatalog,
+
+    dekatalog1920,
+    elkatalog1920,
+    enkatalog1920,
+    frkatalog1920,
+    polkatalog1920,
+    pykatalog1920,
+    trkatalog1920,
+    arkatalog1920,
 
     background
 };

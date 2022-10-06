@@ -19,7 +19,7 @@ export function Header({ history }) {
     };
     window.addEventListener('scroll', changeNavbarColor);
 
-   // const contentbg = colorChange ? "app__navbar_bgdark app__navbar" : "app__navbar_bgtransparent app__navbar"
+    // const contentbg = colorChange ? "app__navbar_bgdark app__navbar" : "app__navbar_bgtransparent app__navbar"
     const contentbg = colorChange ? "app__navbar_bgdark app__navbar" : "app__navbar_bgdark app__navbar"
     //const libg = colorChange ? 'p__opensans-light' : 'p__opensans-dark'
     const libg = colorChange ? 'p__opensans-dark' : 'p__opensans-dark'
@@ -33,11 +33,11 @@ export function Header({ history }) {
             <ul className='app__navbar-links'>
                 <li className={libg}><a className='hover-underline-animation' onClick={() => { history.push('/Products') }}>Ürünlerimiz</a></li>
                 <li className={libg}><a className='hover-underline-animation' onClick={() => { history.push('/Corporate') }} >Kurumsal</a></li>
-                <li className={libg}><a className='hover-underline-animation' >Katalog</a></li>
+                <li className={libg}><a className='hover-underline-animation' onClick={() => { history.push('/Catalog') }}>Katalog</a></li>
                 <li className={libg}><a className='hover-underline-animation' href='#home'>Es Grup</a></li>
                 <li className={libg}><a className='hover-underline-animation' href='#home'>İletişim</a></li>
             </ul>
-          
+
             <div className='app__navbar-smallscreen'>
                 <GiHamburgerMenu color='fff' fontSize={27} onClick={() => { setTogglemenu(true) }} />
                 {togglemenu && (
