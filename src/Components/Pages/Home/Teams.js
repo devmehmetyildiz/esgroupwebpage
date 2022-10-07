@@ -2,6 +2,7 @@ import React from 'react'
 import Slider from 'react-slick'
 import Teamsitem from '../../Common/Teamsitem';
 import images from "../../../assets/images"
+import productimages from "../../../assets/productimages"
 
 export default function Teams() {
 
@@ -17,23 +18,36 @@ export default function Teams() {
     )
   };
 
+  const sliderContents = [
+    {
+      title: "BAKLAVA SERİSİ",
+      imgleft: productimages.baklavabasıktencerePurple,
+      imgcenter: productimages.baklavaPink,
+      imgright: productimages.baklavabasıktencereRed
+    },
+    {
+      title: "İSTİRİDYE SERİ",
+      imgleft: productimages.baklavabasıktencerePurple,
+      imgcenter: productimages.baklavaPink,
+      imgright: productimages.baklavabasıktencereRed
+    },
+    {
+      title: "ECO SERİ",
+      imgleft: productimages.baklavabasıktencerePurple,
+      imgcenter: productimages.baklavaPink,
+      imgright: productimages.baklavabasıktencereRed
+    },
+
+  ]
+
+
   return (
     <div className='bg-[#f9f9f9] p-4 mb-2'>
       <div className='lg:p-20 cursor-pointer'>
         <Slider {...Slidersettings}>
-          <Teamsitem imgsrc={images.team1} title="John Smith" work="Python Developer" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum  ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed tempor incididunt ut labore et dolore."  />
-          <Teamsitem imgsrc={images.team2} title="John Smith" work="Python Developer" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum  ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed tempor incididunt ut labore et dolore."  />
-          <Teamsitem imgsrc={images.team3} title="John Smith" work="Python Developer" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum  ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed tempor incididunt ut labore et dolore."  />
-          <Teamsitem imgsrc={images.team1} title="John Smith" work="Python Developer" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum  ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed tempor incididunt ut labore et dolore."  />
-          <Teamsitem imgsrc={images.team1} title="John Smith" work="Python Developer" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum  ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed tempor incididunt ut labore et dolore."  />
-          <Teamsitem imgsrc={images.team1} title="John Smith" work="Python Developer" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum  ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed tempor incididunt ut labore et dolore."  />
-          <Teamsitem imgsrc={images.team1} title="John Smith" work="Python Developer" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum  ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed tempor incididunt ut labore et dolore."  />
-          <Teamsitem imgsrc={images.team1} title="John Smith" work="Python Developer" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum  ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed tempor incididunt ut labore et dolore."  />
-          <Teamsitem imgsrc={images.team1} title="John Smith" work="Python Developer" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum  ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed tempor incididunt ut labore et dolore."  />
-          <Teamsitem imgsrc={images.team1} title="John Smith" work="Python Developer" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum  ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed tempor incididunt ut labore et dolore."  />
-          <Teamsitem imgsrc={images.team1} title="John Smith" work="Python Developer" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum  ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed tempor incididunt ut labore et dolore."  />
-          <Teamsitem imgsrc={images.team1} title="John Smith" work="Python Developer" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum  ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed tempor incididunt ut labore et dolore."  />
-          <Teamsitem imgsrc={images.team1} title="John Smith" work="Python Developer" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum  ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed tempor incididunt ut labore et dolore."  />
+          {sliderContents.map(item => {
+            return <Teamsitem {...item} />
+          })}
         </Slider>
       </div>
     </div>
