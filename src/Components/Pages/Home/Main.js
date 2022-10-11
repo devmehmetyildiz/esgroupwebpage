@@ -27,12 +27,12 @@ export default function main() {
   };
 
   const slideritem1 = {
-    title: "Fuar Katılımımları",
+    title: "Fuar Katılımları",
     text: "13-15 Eylül 2022 tarihleri arasında Moskova, Rusya'daki HouseHold Expo Uluslararası Züccacaiye Dekorasyon ve Ev Tekstili Fuarına Eslok Mutfak Eşyaları Sanayi ve Tic. Ltd. Şti. olarak katılım gerçekleştirdik ",
     image: images.tanıtımfoto1
   }
   const slideritem2 = {
-    title: "Fuar Katılımımları",
+    title: "Fuar Katılımları",
     text: "10-13 Mart 2022 tarihleri arasında TÜYAP İstanbul'daki HOST İSTANBUL Fuarına Eslok Mutfak Eşyaları Sanayi ve Tic. Ltd. Şti. olarak katılım gerçekleştirdik",
     image: images.tanıtımfoto2
   }
@@ -42,14 +42,14 @@ export default function main() {
     video: "https://www.youtube.com/embed/BwoP3xEsdz0"
   }
   const slideritem4 = {
-    title: "Fuar Katılımımları",
+    title: "Fuar Katılımları",
     text: "15-18 Eylül 2022 tarihleri arasında TÜYAP İstanbul'daki ZUCHEX EV ve MUTFAK EŞYALARI Fuarına Eslok Mutfak Eşyaları Sanayi ve Tic. Ltd. Şti. olarak katılım gerçekleştirdik",
     image: images.tanıtımfoto3
   }
 
 
   return (
-    <div className='pt-16 pb-8 mainbackground max-w-[100%]'>
+    <div className='pt-16 pb-8 px-20 mainbackground '>
       <Slider {...Slidersettings}>
         <Mainslider content={slideritem3} type="video" showbtn={false} />
         <Mainslider content={slideritem2} type="img" showbtn={true} />

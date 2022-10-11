@@ -56,28 +56,23 @@ export default function Index() {
                 <h1 className='font-bold text-[#F6E5C1] text-5xl'>KURUMSAL</h1>
             </div>
             <div className='flex flex-col justify-center items-center py-4  w-2/3'>
-                <motion.div
-                    initial={{ x: 400 }}
-                    //whileInView={{ x: 0 }}
-                    transition={{ duration: 0.5 }}
-                    animate={{ x: 0 }}
-                >
+                <motion.div {...frame_toleftslide} >
                     <h1 className='text-4xl text-[#20002C] font-bold font-poppins'>HAKKIMIZDA</h1>
                 </motion.div>
                 <div className='border-2 bg-[#20002C] border-[#20002C] w-[100%] my-2' />
-                <motion.div initial={{ x: 400 }} whileInView={{ x: 0 }} transition={{ duration: 0.5 }}    >
+                <motion.div {...frame_toleftslide}    >
                     <p className='py-2 text-lg text-gray-600 font-bold'>{withoustext}</p>
                 </motion.div>
-                <motion.div initial={{ x: 400 }} whileInView={{ x: 0 }} transition={{ duration: 0.7 }}    >
+                <motion.div {...frame_toleftslide}    >
                     <p className='py-2 text-lg text-gray-600 font-bold'>{withoustext1}</p>
                 </motion.div>
-                <motion.div initial={{ x: 400 }} whileInView={{ x: 0 }} transition={{ duration: 1 }}    >
+                <motion.div {...frame_toleftslide}    >
                     <p className='py-2 text-lg text-gray-600 font-bold'>{withoustext2}</p>
                 </motion.div>
-                <motion.div initial={{ x: 400 }} whileInView={{ x: 0 }} transition={{ duration: 1.2 }}    >
+                <motion.div {...frame_toleftslide}   >
                     <p className='py-2 text-lg text-gray-600 font-bold'>{withoustext3}</p>
                 </motion.div>
-                <motion.div initial={{ x: 400 }} whileInView={{ x: 0 }} transition={{ duration: 1.4 }}    >
+                <motion.div {...frame_toleftslide}    >
                     <p className='py-2 text-lg text-gray-600 font-bold'>{withoustext4}</p>
                 </motion.div>
             </div>

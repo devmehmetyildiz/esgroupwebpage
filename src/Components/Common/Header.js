@@ -34,8 +34,7 @@ export function Header({ history }) {
                 <li className={libg}><a className='hover-underline-animation' onClick={() => { history.push('/Products') }}>Ürünlerimiz</a></li>
                 <li className={libg}><a className='hover-underline-animation' onClick={() => { history.push('/Corporate') }} >Kurumsal</a></li>
                 <li className={libg}><a className='hover-underline-animation' onClick={() => { history.push('/Catalog') }}>Katalog</a></li>
-                <li className={libg}><a className='hover-underline-animation' href='#home'>Es Grup</a></li>
-                <li className={libg}><a className='hover-underline-animation' href='#home'>İletişim</a></li>
+                <li className={libg}><a className='hover-underline-animation' onClick={() => { history.push('/Contact') }}>İletişim</a></li>
             </ul>
 
             <div className='app__navbar-smallscreen'>
@@ -44,11 +43,22 @@ export function Header({ history }) {
                     <div className='app__navbar-smallscreen_overlayer flex__center slide-bottom'>
                         <MdOutlineRestaurantMenu fontSize={28} className="overlayer__close" onClick={() => { setTogglemenu(false) }} />
                         <ul className='app__navbar-smallscreen_links'>
-                            <li className='p__opensans-dark'><a className='hover-underline-animation' href='/Products'>Ürünlerimiz</a></li>
-                            <li className='p__opensans-dark'><a className='hover-underline-animation' href='#home'>Kurumsal</a></li>
-                            <li className='p__opensans-dark'><a className='hover-underline-animation' href='/Corporate'>Katalog</a></li>
-                            <li className='p__opensans-dark'><a className='hover-underline-animation' href='#home'>Es Grup</a></li>
-                            <li className='p__opensans-dark'><a className='hover-underline-animation' href='#home'>İletişim</a></li>
+                            <li className={libg}><a className='hover-underline-animation' onClick={() => {
+                                history.push('/Products')
+                                setTogglemenu(false)
+                            }}>Ürünlerimiz</a></li>
+                            <li className={libg}><a className='hover-underline-animation' onClick={() => {
+                                history.push('/Corporate')
+                                setTogglemenu(false)
+                            }} >Kurumsal</a></li>
+                            <li className={libg}><a className='hover-underline-animation' onClick={() => {
+                                history.push('/Catalog')
+                                setTogglemenu(false)
+                            }}>Katalog</a></li>
+                            <li className={libg}><a className='hover-underline-animation' onClick={() => {
+                                history.push('/Contact')
+                                setTogglemenu(false)
+                            }}>İletişim</a></li>
                         </ul>
                     </div>
                 )}

@@ -21,7 +21,7 @@ export function Mainslider({ content, showbtn, type, history }) {
                 <div className='p-4 w-2/3 lg:w-1/2 lg:p-0'>
                     {type === "img" ?
                         <motion.div whileHover={{ scale: 1.2, transition: { duration: 1 }, }}> <img src={image} alt="" className='object-contain max-w-[60%]' /></motion.div> :
-                        <iframe width="460" height="315"
+                        <iframe  className='lg:w-[460px] lg:h-[315px] w-[230px] h-[160px]'
                             src={video}
                             title={videotitle}
                             frameborder="0"

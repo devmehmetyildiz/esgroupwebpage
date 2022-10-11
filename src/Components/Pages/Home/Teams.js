@@ -13,7 +13,7 @@ export default function Teams() {
     slidesToShow: 1,
     slidesToScroll: 1,
     customPaging: i => (
-      <div className="slick rounded-full border-[2px] border-orange-500 text-[#f9f9f9] p-[10px] hover:bg-orange-700">
+      <div className="slick rounded-full border-[2px] border-[#cbb4d4] bg-[#cbb4d4] text-[#cbb4d4] p-[10px] hover:border-[#20002C] hover:bg-[#20002C] ">
       </div>
     )
   };
@@ -21,29 +21,38 @@ export default function Teams() {
   const sliderContents = [
     {
       title: "BAKLAVA SERİSİ",
-      imgleft: productimages.baklavabasıktencerePurple,
+      imgright: productimages.baklavabasıktencerePurple,
       imgcenter: productimages.baklavaPink,
-      imgright: productimages.baklavabasıktencereRed
+      imgleft: productimages.baklavabasıktencereRed,
+      imgtitle : "ETİKA BAKLAVA SERİSİ TENCERE"
     },
     {
       title: "İSTİRİDYE SERİ",
-      imgleft: productimages.baklavabasıktencerePurple,
-      imgcenter: productimages.baklavaPink,
-      imgright: productimages.baklavabasıktencereRed
+      imgright: productimages.ecoBrown,
+      imgcenter: productimages.baklavabasıktencerePurple,
+      imgleft: productimages.baklavaPink,
+      imgtitle : "ETİKA BAKLAVA SERİSİ TENCERE"
     },
     {
       title: "ECO SERİ",
+      imgright: productimages.ecoDark,
+      imgcenter: productimages.ecoBrown,
       imgleft: productimages.baklavabasıktencerePurple,
-      imgcenter: productimages.baklavaPink,
-      imgright: productimages.baklavabasıktencereRed
+      imgtitle : "ETİKA BAKLAVA SERİSİ TENCERE"
     },
-
+    {
+      title: "ECO SERİ",
+      imgright: productimages.baklavabasıktencereRed,
+      imgcenter: productimages.ecoDark,
+      imgleft: productimages.ecoBrown,
+      imgtitle : "ETİKA BAKLAVA SERİSİ TENCERE"
+    },
   ]
 
 
   return (
-    <div className='bg-[#f9f9f9] p-4 mb-2'>
-      <div className='lg:p-20 cursor-pointer'>
+    <div className=' p-4 mb-2 mainbackground'>
+      <div className='p-20 cursor-pointer '>
         <Slider {...Slidersettings}>
           {sliderContents.map(item => {
             return <Teamsitem {...item} />
